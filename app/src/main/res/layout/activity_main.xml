@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <FrameLayout
+        android:id="@+id/fragmentReplaces"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavBar">
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="12dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_shape">
+
+        <FrameLayout
+            android:id="@+id/ic_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ic_homeImg"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:background="@drawable/home"
+               android:backgroundTint="@color/white" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ic_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ic_bookmarkImg"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/bookmark_nav" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ic_download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ic_downloadImg"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/download" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
